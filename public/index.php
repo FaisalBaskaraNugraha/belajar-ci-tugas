@@ -44,9 +44,7 @@ require_once SYSTEMPATH . 'Config/DotEnv.php';
 (new CodeIgniter\Config\DotEnv(ROOTPATH))->load();
 
 // Define ENVIRONMENT
-if (! defined('ENVIRONMENT')) {
-    define('ENVIRONMENT', env('CI_ENVIRONMENT', 'production'));
-}
+define('ENVIRONMENT', $_SERVER['CI_ENVIRONMENT'] ?? 'production');
 
 // Load Config Cache
 // $factoriesCache = new \CodeIgniter\Cache\FactoriesCache();

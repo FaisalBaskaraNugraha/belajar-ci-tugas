@@ -1,5 +1,7 @@
 {
     "require": {
+       
+    "codeigniter4/framework": "4.4.6",
         "dompdf/dompdf": "^3.0",
         "jason-napolitano/codeigniter4-cart-module": "^1.0"
     }
